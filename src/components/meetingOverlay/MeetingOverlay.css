@@ -1,0 +1,17 @@
+.meetingOverlay__meeting {
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: block;
+    position: absolute;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.meetingOverlay__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
