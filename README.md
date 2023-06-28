@@ -53,7 +53,7 @@ To run the application locally, follow these steps:
 
 ## Blog Post
 
-I have written a detailed blog post explaining the approach and implementation of this Google calendar's single column rendering solution using ReactJS. You can find the blog post [here]([link-to-your-blog-post](https://hritik2002.hashnode.dev/how-to-create-a-google-calendar-and-show-scheduled-meetings)).
+I have written a detailed blog post explaining the approach and implementation of this Google calendar's single column rendering solution using ReactJS. You can find the blog post [here](https://hritik2002.hashnode.dev/how-to-create-a-google-calendar-and-show-scheduled-meetings).
 
 Feel free to explore the code, modify it according to your needs, and provide any feedback or suggestions.
 
