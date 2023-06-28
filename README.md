@@ -1,70 +1,60 @@
-# Getting Started with Create React App
+# Google Calendar Rendering
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains the code for rendering a Google calendar's single column with scheduled meetings using ReactJS.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Problem Statement
 
-### `npm start`
+The task is to create a column representation of a Google calendar and render the scheduled meetings. The meetings are provided as an array, and there are four cases to handle:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+1. Only one meeting at a given start and end time.
+2. Two or more meetings that intersect but have different start and end times.
+3. Two or more meetings that start and end at the same time.
+4. Two or more meetings that start and end at the same time, and some meetings intersect but have different start and end times.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Solution
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+The problem can be solved by breaking it down into smaller parts and implementing them step by step. Here is an overview of the solution approach:
 
-### `npm run build`
+1. Build a column component that renders the hours as cells.
+2. Perform necessary calculations on the meetings array to convert it into the required format.
+3. Use the converted meetings data to build the meetings layer and render it on top of the column component.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Folder Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The folder structure of this repository is as follows:
 
-### `npm run eject`
+<img width="276" alt="Screenshot 2023-06-27 at 11 06 46 PM" src="https://github.com/hritik2002/CalendarColumn-FE-Interview/assets/72138429/23cac38d-b9d9-481e-b738-0c2a0b97669c">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- The `src/components` directory contains the React components used in the application.
+- The `src/App.js` file is the main entry point of the application.
+- The `src/index.js` file is responsible for rendering the root component (`App`) into the DOM.
+- The `src/data.js` file contains the sample meetings data provided by the interviewer.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Output of the code
 
-## Learn More
+<img width="218" alt="Screenshot 2023-06-29 at 4 48 03 AM" src="https://github.com/hritik2002/CalendarColumn-FE-Interview/assets/72138429/4ee0c292-9d69-4e0b-8d70-340f6baf656f">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Running the Application
 
-### Code Splitting
+To run the application locally, follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+1. Clone this repository to your local machine.
+2. Navigate to the project directory.
+3. Install the dependencies by running the command: `npm install`.
+4. Start the development server by running the command: `npm start`.
+5. Open your browser and visit `http://localhost:3000` to see the Google calendar rendering with the scheduled meetings.
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Blog Post
 
-### Making a Progressive Web App
+I have written a detailed blog post explaining the approach and implementation of this Google calendar's single column rendering solution using ReactJS. You can find the blog post [here](link-to-your-blog-post).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to explore the code, modify it according to your needs, and provide any feedback or suggestions.
 
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Happy coding!
